@@ -6,10 +6,19 @@ Yellow : #ffff00
 Blue: #01a1dd
 Purple: #a14fa4
 ****************************/
+
 * {
 	margin: 0;
 	padding: 0;
 	border: 0;
+}
+
+html{
+  font-size: 62.5%; /*** 10/16 = 62.5% | This defines what 1 rem is; | 1 rem = 10px ***/
+}
+
+body{
+  font-size: 1.6rem;
 }
 
 /****************************
