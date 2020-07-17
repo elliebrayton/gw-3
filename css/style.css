@@ -41,5 +41,19 @@ body{
 
 .navigation ul{
   display: flex;
+  justify-content: center;
   list-style-type: none;
+  font: 400 2.5rem 'Staatliches', cursive;
+  padding-bottom: 10%;
+  letter-spacing: 0.1rem;
+}
+
+.navigation ul li a:link,
+.navigation ul li a:visited{
+  text-decoration: none;
+  color: #3e3668;
+}
+
+.navigation ul li:not(:last-child){
+  margin-right: 15%;
 }
