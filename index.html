@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Lizzie McGuire - Home</title>
-    <!-- STYLESHEET -->
+    <!-- STYLESHEETS -->
 		<link type="text/css" rel="stylesheet" href="css/style.css" />
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
@@ -18,12 +18,12 @@
     <!-- START HEADER -->
     <header class="header">
       <div class="site-logo">
-        <img src="images/site-logo.png" alt="Lizzie-McGuire-Logo">
+        <img id="object" class="slideDown" src="images/site-logo.png" alt="Lizzie-McGuire-Logo">
       </div>
       <!-- START MOBILE-NAV -->
-      <nav class="navigation">
+      <nav class="navigation slideUp">
         <ul>
-          <li><a href="index.html">Lizzie</a></li>
+          <li class="active"><a href="index.html">Lizzie</a></li>
           <li><a href="miranda.html">Miranda</a></li>
           <li><a href="gordo.html">Gordo</a></li>
         </ul>
@@ -31,6 +31,7 @@
       <!-- END MOBILE-NAV -->
     </header>
     <!-- END HEADER -->
+    <script src="js/header-animations.js"></script>
 	</body>
   <!-- END BODY -->
 </html>
