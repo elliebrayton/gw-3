@@ -29,3 +29,8 @@ Purple: #a14fa4
     display: block;
     margin: 0 auto;
 }
+
+.navigation ul{
+  display: flex;
+  list-style-type: none;
+}
