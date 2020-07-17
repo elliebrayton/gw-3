@@ -1,5 +1,31 @@
+/****************************
+COLOR PALETTE:
+Dark Pink: #c3197f
+Light Pink: #e05f98
+Yellow : #ffff00
+Blue: #01a1dd
+Purple: #a14fa4
+****************************/
 * {
 	margin: 0;
 	padding: 0;
 	border: 0;
+}
+
+/****************************
+          HEADER
+****************************/
+
+.header{
+  background-image: url('/images/header-background.jpg');
+  background-color: #e05f98;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-logo img {
+    max-width: 60%;
+    display: block;
+    margin: 0 auto;
 }
