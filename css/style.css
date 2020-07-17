@@ -90,13 +90,10 @@ body{
 .slideUp{
 	animation-name: slideUp;
 	-webkit-animation-name: slideUp;
-
 	animation-duration: 1s;
 	-webkit-animation-duration: 1s;
-
 	animation-timing-function: ease;
 	-webkit-animation-timing-function: ease;
-
 	visibility: visible !important;
 }
 
@@ -161,12 +158,6 @@ body{
     margin: 0 auto;
 }
 
-#object{
-	background-color: transparent;
-
-	visibility: hidden;
-}
-
 .navigation ul{
   display: flex;
   justify-content: center;
@@ -184,4 +175,24 @@ body{
 
 .navigation ul li:not(:last-child){
   margin-right: 15%;
+}
+
+.hover_skew--forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+.hover_skew--forward:hover,
+.hover_skew--forward:focus,
+.hover_skew--forward:active {
+  -webkit-transform: skew(-10deg);
+  transform: skew(-10deg);
 }
