@@ -21,11 +21,14 @@ html{
 body{
   font-size: 1.6rem;
 	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
 }
 
 /****************************
           KEYFRAMES
 ****************************/
+
+/* HEADER ANIMATIONS***************************/
 .slideDown{
 	animation-name: slideDown;
 	-webkit-animation-name: slideDown;
@@ -140,6 +143,10 @@ body{
 		-webkit-transform: translateY(0%);
 	}
 }
+/* ASIDE ANIMATIONS***************************/
+.animate__backInLeft {
+  --animate-duration: 1.2s;
+}
 
 /****************************
           HEADER
@@ -244,7 +251,6 @@ body{
 	flex-direction: column;
 	align-items: center;
 	background: #c3197f;
-	padding: 5% 0;
 }
 
 .site-content>*:not(:last-child){
@@ -254,6 +260,7 @@ body{
 .eclipse{
 	width: 250px;
 	height: 300px;
+	margin-top: 5%;
 	background: #01a1dd;
 	border-radius: 50%;
 	background-image: url('/images/lizzie-mcguire.png');
@@ -266,14 +273,36 @@ body{
 	color: white;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.6rem;
-	padding: 3%;
 }
 
-.quote{
+.article p{
+	padding: 5%;
+}
+
+.aside{
+	width: 100%;
 	color: yellow;
 	font: 400 2.5rem 'Staatliches', cursive;
 	letter-spacing: 0.1rem;
 	padding: 3%;
+	background: #01a1dd;
+}
+
+.quote{
+	display: block;
+	margin: 0 auto;
+	padding: 5%;
+	max-width: 55rem;
+}
+
+.quote--from {
+    text-align: right;
+}
+
+.lm--jump{
+	display: block;
+	margin: 0 auto;
+	max-width: 60%;
 }
 /****************************
       		 FOOTER
