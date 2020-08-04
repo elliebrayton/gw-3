@@ -22,6 +22,19 @@ body{
   font-size: 1.6rem;
 	font-family: 'Montserrat', sans-serif;
 	overflow-x: hidden;
+
+	color: white;
+font-family: 'Montserrat', sans-serif;
+font-size: 1.6rem;
+line-height: 2.2rem;
+font-weight: 300;
+font-style: normal;
+}
+
+h1{
+	font: 400 3rem 'Staatliches', cursive;
+	letter-spacing: 0.1rem;
+	padding-bottom: 3%;
 }
 
 /****************************
@@ -257,28 +270,75 @@ body{
 	margin-bottom: 5%;
 }
 
+/* Character Images ***************************/
+.pink{
+	background-color: #c3197f;
+}
+
+.yellow{
+	background-color: #ffff00;
+	color: #2c2423;
+}
+
+.blue{
+	background-color: #01a1dd;
+}
+
+.purple{
+	background-color: #a14fa4;
+}
+
 .eclipse{
 	width: 250px;
 	height: 300px;
-	margin-top: 5%;
-	background: #01a1dd;
+	margin-top: 10%;
 	border-radius: 50%;
-	background-image: url('../images/lizzie-mcguire.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100%;
 }
 
+.lizzie{
+	background-image: url('../images/lizzie-mcguire.png');
+	transition: .35s ease-in-out;
+}
+
+.lizzie:hover{
+	background-image: url('../images/lizzie-animated.png');
+	background-size: 65%;
+	transition: .35s ease-in-out;
+}
+
+.miranda{
+	background-image: url('../images/miranda.png');
+	transition: .35s ease-in-out;
+}
+
+.miranda:hover{
+	background-image: url('../images/miranda-cartoon.png');
+	background-size: 65%;
+	transition: .35s ease-in-out;
+}
+
+.gordo{
+	background-image: url('../images/gordo.png');
+	background-size: 150%;
+	transition: .35s ease-in-out;
+}
+
+.gordo:hover{
+	background-image: url('../images/gordo-cartoon.png');
+	background-size: 76%;
+	transition: .35s ease-in-out;
+}
+
+/* ARTICLE ***************************/
+
 .article{
-	color: white;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 1.6rem;
-	padding: 5%;
+	padding: 7%;
 }
 
-.article p{
-}
-
+/* ASIDE ***************************/
 .aside{
 	width: 100%;
 	color: yellow;
@@ -304,23 +364,6 @@ body{
 	max-width: 60%;
 }
 
-.pink{
-	background: #c3197f;
-}
-
-.yellow{
-	background: #ffff00;
-	color: #2c2423;
-}
-
-.blue{
-	background: #01a1dd;
-}
-
-.purple{
-	background: #a14fa4;
-
-}
 /****************************
       		 FOOTER
 ****************************/
@@ -369,26 +412,11 @@ body{
         MEDIA QUERIES
 ****************************/
 
-/******** START MIN-WIDTH 414px ********/
-@media (min-width: 414px){
-  .navigation ul{
-    padding-bottom: 5%;
-  }
-
-  .landing_landing_site-logo{
-      max-width: 35%;
-  }
-}
-/******** END MIN-WIDTH 414px ********/
-
-
-/******** START MIN-WIDTH 414px ********/
-@media (min-width: 600px){
-  .landing_landing_site-logo{
-      max-width: 32%;
-  }
-  .landing_header-image{
-    max-width: 75%;
-    margin-bottom: -20px;
-  }
+@media(min-width: 476px){
+	.eclipse{
+		width: 300px;
+		height: 360px;
+		margin-top: 10%;
+		border-radius: 50%;
+	}
 }
