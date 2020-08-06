@@ -19,14 +19,14 @@ html{
 }
 
 body{
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 	font-family: 'Montserrat', sans-serif;
 	overflow-x: hidden;
 
 	color: white;
 font-family: 'Montserrat', sans-serif;
-font-size: 1.6rem;
-line-height: 2.2rem;
+font-size: 1.5rem;
+line-height: 2rem;
 font-weight: 300;
 font-style: normal;
 }
@@ -187,14 +187,14 @@ h1{
 }
 
 .landing_site-logo{
-  max-width: 40%;
+  max-width: 60%;
   display: block;
   margin: 0 auto;
   padding: 5% 0;
 }
 
 .site-logo{
-  max-width: 40%;
+  max-width: 60%;
   display: block;
   margin: 0 auto;
   padding: 5% 0;
@@ -217,6 +217,10 @@ h1{
 
 .navigation ul li:not(:last-child){
   margin-right: 15%;
+}
+
+.nav-desktop{
+	display: none;
 }
 
 .hover_skew--forward {
@@ -260,10 +264,18 @@ h1{
 
 .site-content {
 	flex: 1;
+	background: #c3197f;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: #c3197f;
+}
+
+.page-container {
+	flex: 1;
+	max-width: 95rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .site-content>*:not(:last-child){
@@ -289,13 +301,18 @@ h1{
 }
 
 .eclipse{
-	width: 250px;
-	height: 300px;
-	margin-top: 10%;
+	width: 25rem;
+	height: 30rem;
 	border-radius: 50%;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100%;
+}
+
+.eclipse-container{
+	max-width: 100%;
+	overflow: hidden;
+	margin-top: 5%;
 }
 
 .lizzie{
@@ -335,17 +352,29 @@ h1{
 /* ARTICLE ***************************/
 
 .article{
-	padding: 7%;
+	padding: 5%;
 }
 
 /* ASIDE ***************************/
 .aside{
-	width: 100%;
+	width: 100vw;
 	color: yellow;
 	font: 400 2.5rem 'Staatliches', cursive;
 	letter-spacing: 0.1rem;
 	padding: 3%;
+	display: flex;
+flex-direction: column;
 }
+
+.aside-content{
+	display: flex;
+	max-width: 95rem;
+	margin: 0 auto;
+	flex-direction: column;
+}
+
+
+
 
 .quote{
 	display: block;
@@ -364,19 +393,26 @@ h1{
 	max-width: 60%;
 }
 
+
 /****************************
       		 FOOTER
 ****************************/
 
-.footer {
-  display: flex;
-  flex-direction: column;
-	align-items: center;
+.footer{
+	width: 100%;
 	background: #2c2423;
-	padding: 3% 0;
 }
 
-.footer>*{
+.footer-content {
+  display: flex;
+	margin: 0 auto;
+  flex-direction: column;
+	align-items: center;
+	padding: 3% 0;
+	max-width: 95rem;
+}
+
+.footer-content>*{
 	padding: 5% 0;
 }
 
@@ -418,5 +454,141 @@ h1{
 		height: 360px;
 		margin-top: 10%;
 		border-radius: 50%;
+	}
+}
+
+@media(min-width: 564px){
+	.footer-content{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.footer_site-logo{
+		max-width: 20%;
+	}
+
+	.group-logo{
+		width: 25%;
+	}
+
+
+.footer-links ul{
+	align-items: flex-start;
+}
+}
+
+
+@media(min-width: 670px){
+
+	.nav-desktop{
+		display: flex;
+	}
+
+	.nav-mobile{
+		display: none;
+	}
+
+	.page-container {
+		flex: 1;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		padding: 2%;
+	}
+	 .article{
+		flex: 1;
+	}
+
+	.site-content>*:not(:last-child){
+		margin-bottom: 0;
+	}
+
+	.eclipse{
+		width: 250px;
+		height: 310px;
+		border-radius: 50%;
+		margin-top: 0;
+	}
+
+	.eclipse-container{
+		margin-top: 0;
+		margin-left: 5%;
+	}
+
+	.article{
+		padding: 5%;
+	}
+
+	.miranda{
+		background-size: 110%;
+	}
+
+	.miranda:hover{
+		background-size: 70%;
+	}
+
+	.gordo{
+		background-size: 158%;
+	}
+
+	.gordo:hover{
+		background-size: 85%;
+	}
+
+	.aside-content{
+		display: flex;
+		max-width: 95rem;
+		margin: 0 auto;
+		flex-direction: row;
+	}
+
+
+	.aside-content>*:not(:first-child){
+		padding-right: 5%;
+	}
+
+
+@media(min-width: 700px) {
+	html{
+		font-size: 68.75%;
+	}
+}
+
+@media(min-width: 900px) {
+	html{
+		font-size: 75%;
+	}
+
+	.header{
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.page-container{
+		padding: 5% 2%;
+	}
+
+	.eclipse{
+		width: 28rem;
+		height: 33rem;
+		border-radius: 50%;
+		margin-top: 0;
+	}
+
+	.miranda{
+		background-size: 110%;
+	}
+
+	.miranda:hover{
+		background-size: 65%;
+	}
+
+	.gordo{
+		background-size: 150%;
+	}
+
+	.gordo:hover{
+		background-size: 75%;
 	}
 }
