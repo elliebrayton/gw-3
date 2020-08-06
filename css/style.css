@@ -166,7 +166,7 @@ h1{
 ****************************/
 
 .landing_header{
-  background-image: url('/images/header-background.jpg');
+  background-image: url('../images/header-background.jpg');
   background-color: #e05f98;
 	background-size: cover;
   display: flex;
@@ -175,6 +175,7 @@ h1{
   overflow: hidden;
   position: relative;
 	height: 100vh;
+	padding-bottom: 5%;
 }
 
 .header{
@@ -459,6 +460,7 @@ h1{
 	width: 50%;
 }
 
+
 .footer-links ul{
   display: flex;
 	flex-direction: column;
@@ -482,6 +484,18 @@ h1{
 /****************************
         MEDIA QUERIES
 ****************************/
+
+/**********************Start Min-width 450px *******************/
+/*increase padding in landing header */
+@media (min-width: 450px) {
+
+	.landing_header{
+		padding-bottom: 25%;
+	}
+}
+
+/**********************End Min-width 450px *******************/
+
 
 @media(min-width: 476px){
 	.eclipse{

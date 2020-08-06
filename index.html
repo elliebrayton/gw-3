@@ -7,28 +7,30 @@
 		<title>Lizzie McGuire - Home</title>
     <!-- STYLESHEETS -->
 		<link type="text/css" rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="../dist/css/animsition.min.css">
+
+<link type="text/css" rel="stylesheet" href="loaders.css/loaders.css" />
 		<!-- animsition.css -->
-<link rel="stylesheet" href="../dist/css/animsition.min.css">
-<!-- jQuery -->
-<!-- animsition.js -->
-<script src="../dist/js/animsition.min.js"></script>
+		<link rel="stylesheet" href="animsition/dist/css/animsition.min.css">
+		<!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.15.1/d3.min.js"></script>
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <!--JQUERY-->
-    <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.15.1/d3.min.js"></script>
 
 	</head>
   <!-- END HEAD -->
   <!-- START BODY -->
 	<body>
+		<!--JS NOT WORKING
+		<div class="animsition">
+	-->
     <!-- START HEADER -->
     <header class="landing_header">
         <img class="landing_site-logo slideDown" id="object" src="images/site-logo-small.png" alt="Lizzie-McGuire-Logo">
       <!-- START MOBILE-NAV -->
       <nav class="navigation slideUp">
         <ul>
-          <li class="hover_skew--forward"><a href="lizzie.html">Lizzie</a></li>
+          <li class="hover_skew--forward animsition-link"><a href="./lizzie.html">Lizzie</a></li>
           <li class="hover_skew--forward"><a href="miranda.html">Miranda</a></li>
           <li class="hover_skew--forward"><a href="gordo.html">Gordo</a></li>
         </ul>
@@ -41,7 +43,10 @@
     </header>
     <!-- END HEADER -->
     <!-- SCRIPTS -->
+		<script src="js/animsition.js"></script>
+		<script src="animsition/dist/js/animsition.min.js"></script>
     <script src="js/header_animations.js"></script>
+		</div>
 	</body>
   <!-- END BODY -->
 </html>
