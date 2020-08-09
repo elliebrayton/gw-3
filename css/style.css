@@ -20,15 +20,10 @@ html{
 }
 
 body{
-  font-size: 1.5rem;
-	font-family: 'Montserrat', sans-serif;
+	font: normal 300 1.5rem 'Montserrat', sans-serif;
 	overflow-x: hidden;
 	color: white;
-font-family: 'Montserrat', sans-serif;
-font-size: 1.5rem;
-line-height: 2rem;
-font-weight: 300;
-font-style: normal;
+	line-height: 2rem;
 }
 
 h1{
@@ -193,7 +188,7 @@ h1{
 	max-width: 95rem;
 	margin: 0 auto;
 }
-
+/* INDEX PAGE (LANDING PAGE)***************************/
 .landing_site-logo{
   display: block;
   margin: 0 auto;
@@ -201,20 +196,24 @@ h1{
 	max-width: 60%;
 }
 
-.landing_header-image {
-    max-width: 85%;
-    display: block;
-    margin: 0 auto;
+.landing_header-image{
+  max-width: 75%;
+  display: block;
+  margin: 0 auto;
 }
 
-.landing--container {
-    text-align: center;
-		margin-top: 15%;
-		margin-bottom: 5% !important;
-	}
+.landing--container{
+  text-align: center;
+	margin-top: 15%;
+	margin-bottom: 5% !important;
+}
 
-.button {
-  background-color: #c3197f;
+.header-image{
+	display: none;
+}
+
+.button{
+	background-color: #c3197f;
   border:4px solid #ffff00;
   color: white;
  	padding: 1.2rem 1.6rem;
@@ -225,13 +224,12 @@ h1{
 	font: 2.1rem 'Staatliches', sans-serif;
 	text-transform: uppercase;
 	margin-top: -5%;
-	}
-
-	.button:hover {
-	  background-color: #01a1dd;
-	  color: black;
-	  border: 4px solid #c3197f;
-	}
+}
+.button:hover{
+	background-color: #01a1dd;
+	color: black;
+	border: 4px solid #c3197f;
+}
 
 .site-logo{
 	max-width: 80%;
@@ -246,13 +244,20 @@ h1{
   list-style-type: none;
   font: 400 2.5rem 'Staatliches', cursive;
   letter-spacing: 0.1rem;
-  padding-bottom: 2%;
+  padding-bottom: 3%;
 }
 
 .navigation ul li a:link,
 .navigation ul li a:visited{
   text-decoration: none;
   color: #2c2423;
+}
+
+.navigation ul li a:hover {
+	color: #c3197f;
+	border-bottom: dotted;
+	border-color: #ffff00;
+	border-width: thick;
 }
 
 .navigation ul li:not(:last-child){
@@ -283,13 +288,6 @@ h1{
   transform: skew(-10deg);
 }
 
-.header-image{
-	display: none;
-}
-
-
-
-
 /****************************
       		 MAIN
 ****************************/
@@ -308,6 +306,10 @@ h1{
 	align-items: center;
 }
 
+.site-content>*:not(:last-child){
+	margin-bottom: 5%;
+}
+
 .page-container {
 	flex: 1;
 	max-width: 95rem;
@@ -316,11 +318,7 @@ h1{
 	align-items: center;
 }
 
-.site-content>*:not(:last-child){
-	margin-bottom: 5%;
-}
-
-/* Character Images ***************************/
+/* Background Colors ***************************/
 .pink{
 	background-color: #c3197f;
 }
@@ -353,38 +351,39 @@ h1{
 	margin-top: 5%;
 }
 
+.lizzie,
+.miranda,
+.gordo{
+	transition: .35s ease-in-out;
+}
+
+
 .lizzie{
 	background-image: url('../images/lizzie-mcguire.png');
-	transition: .35s ease-in-out;
 }
 
 .lizzie:hover{
 	background-image: url('../images/lizzie-animated.png');
 	background-size: 65%;
-	transition: .35s ease-in-out;
 }
 
 .miranda{
 	background-image: url('../images/miranda.png');
-	transition: .35s ease-in-out;
 }
 
 .miranda:hover{
 	background-image: url('../images/miranda-cartoon.png');
 	background-size: 65%;
-	transition: .35s ease-in-out;
 }
 
 .gordo{
 	background-image: url('../images/gordo.png');
 	background-size: 150%;
-	transition: .35s ease-in-out;
 }
 
 .gordo:hover{
 	background-image: url('../images/gordo-cartoon.png');
 	background-size: 76%;
-	transition: .35s ease-in-out;
 }
 
 /* ARTICLE ***************************/
@@ -423,12 +422,11 @@ h1{
     text-align: right;
 }
 
-.lm--jump{
+.lm--cartoon{
 	display: block;
 	margin: 0 auto;
 	max-width: 60%;
 }
-
 
 /****************************
       		 FOOTER
@@ -460,7 +458,6 @@ h1{
 	width: 50%;
 }
 
-
 .footer-links ul{
   display: flex;
 	flex-direction: column;
@@ -485,7 +482,7 @@ h1{
         MEDIA QUERIES
 ****************************/
 
-/**********************Start Min-width 450px *******************/
+/********************** Start Min-width 450px *******************/
 /*increase padding in landing header */
 @media (min-width: 450px) {
 
@@ -494,9 +491,9 @@ h1{
 	}
 }
 
-/**********************End Min-width 450px *******************/
+/********************** End Min-width 450px *******************/
 
-
+/********************** Start Min-width 476px *******************/
 @media(min-width: 476px){
 	.eclipse{
 		width: 300px;
@@ -504,9 +501,10 @@ h1{
 		margin-top: 10%;
 		border-radius: 50%;
 	}
-
 }
+/********************** End Min-width 476px *******************/
 
+/********************** Start Min-width 564px *******************/
 @media(min-width: 564px){
 
 	.footer-content{
@@ -522,13 +520,13 @@ h1{
 		width: 25%;
 	}
 
-
 	.footer-links ul{
 		align-items: flex-start;
 	}
 }
+/********************** End Min-width 564px *******************/
 
-/**********************Start Min-width 600px *******************/
+/********************** Start Min-width 600px *******************/
 /*increase font size*/
 @media (min-width: 600px) {
 
@@ -540,11 +538,10 @@ h1{
 	    padding: 3% 0;
 	}
 }
-
-/**********************End Min-width 600px *******************/
-
+/********************** End Min-width 600px *******************/
 
 
+/********************** Start Min-width 670px *******************/
 @media(min-width: 670px){
 	.header-container{
 	  flex-direction: row;
@@ -624,20 +621,27 @@ h1{
 	.aside-content>*:not(:first-child){
 		padding-right: 5%;
 	}
+}
+/********************** End Min-width 600px *******************/
 
-
+/********************** Start Min-width 700px *******************/
 @media(min-width: 700px) {
 	html{
 		font-size: 68.75%;
 	}
+	.landing_header-image{
+		max-width: 60%;
+	}
 
 	.landing--container {
 			text-align: center;
-			margin-top: 0;
+			margin-top: 5%;
 			margin-bottom: 5% !important;
 		}
 }
+/********************** End Min-width 700px *******************/
 
+/********************** Start Min-width 900px *******************/
 @media(min-width: 900px) {
 	html{
 		font-size: 75%;
@@ -675,3 +679,4 @@ h1{
 		background-size: 75%;
 	}
 }
+/********************** End Min-width 900px *******************/
